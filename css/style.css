@@ -1,0 +1,151 @@
+/**** Common ****/
+@font-face {
+    font-family: 'Century';
+    src: url('../fonts/century.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Mosk';
+    src: url('../fonts/mosk/mosk-normal-400.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Mosk Ultra';
+    src: url('../fonts/mosk/mosk-ultra-bold-900.ttf') format('opentype');
+}
+
+/*  */
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    background: linear-gradient(90deg, #ffff 20px, transparent 1%) center, linear-gradient(#FFF 20px, transparent 1%) center, #EEE;
+    background-size: 22px 22px;
+    font-family: 'Mosk';
+    color: #5A5A5A;
+    font-size: 16px;
+}
+.content {
+    margin: 8px;
+}
+.corner-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    min-width: 65px;
+    padding-left: 3px;
+    font-size: 14px;
+}
+@media screen and (min-width: 1150px) {
+    .corner-link { position: fixed; }
+}
+.corner-link-second {
+    top: 19px;
+}
+.corner-link-third {
+    top: 38px;
+}
+@media screen and (max-width: 700px) {
+    .corner-link-second { top: 0; left: 70px; }
+    .corner-link-third { top: 0; left: 140px; }
+}
+.title {
+    font-family: 'Mosk Ultra';
+    font-size: 45px;
+    color: #006D5B;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.footer {
+    font-size: 14px;
+    padding-top: 50px;
+    text-align: center;
+}
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+/**** Me/Yo ****/
+a {
+    /* font-family: monospace; */
+    text-decoration: none;
+    color: inherit;
+    padding: 1px;
+    border: 1px dashed #5A5A5A;
+}
+.photo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+    .photo { display: none; }
+}
+.info {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+.info-item {
+    display:inline-block;
+    padding: 5px 10px;
+}
+.zen {
+    float: right;
+}
+.zen-code {
+    width: 350px;
+    font-size: 14px;
+    height: 37px;
+    font-family: monospace;
+    padding-top: 37px;
+}
+@media screen and (max-width: 370px) {
+    .zen { float: none; }
+    .zen-code { width: 100%; }
+}
+.cursor {
+    margin-left: 1px;
+    margin-bottom: -3px;
+}
+.zen-quote {
+    text-align: right;
+    padding: 5px;
+}
+.section-name {
+    padding: 25px 0 0 0;
+    color: #006D5B;
+}
+.section-name a {
+    border: 0;
+    display: none;
+}
+.section-table {
+    width: 100%;
+    font-size: inherit;
+    border-collapse: collapse;
+}
+.section-table tr td {
+    vertical-align: top;
+}
+.section-table tr td:first-child {
+    width: 38%;
+    border-right: 1px solid #5A5A5A;
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+.section-table tr td:last-child {
+    padding-left: 10px;
+}
+.section-table p {
+    margin: 3 0;
+    padding: 0;
+}
+.section-table ul {
+    margin: 5;
+    padding-left: 30;
+}
+.footer-item {
+    display:inline-block;
+}
